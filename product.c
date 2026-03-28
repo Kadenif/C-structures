@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct Product {
+    char name[100];
+    float price;
+    int quantity;
+};
+
+int main() {
+    struct Product p;
+
+    printf("Enter name: ");
+    scanf("%s", p.name);
+
+    printf("Enter price: ");
+    scanf("%f", &p.price);
+
+    printf("Enter quantity: ");
+    scanf("%d", &p.quantity);
+
+    float total = p.price * p.quantity;
+
+    printf("Total: %.2f UAH\n", total);
+
+    return 0;
+}
