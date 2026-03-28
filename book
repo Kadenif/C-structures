@@ -18,7 +18,7 @@ int main() {
     printf("Enter year: ");
     scanf("%d", &book.year);
 
-    // Видаляємо \n з рядків
+    
     for(int i = 0; book.title[i] != '\0'; i++) {
         if(book.title[i] == '\n') {
             book.title[i] = '\0';
