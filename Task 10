@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct Rectangle {
+    double width;
+    double height;
+};
+
+int main() {
+    struct Rectangle r1, r2;
+
+    printf("Rectangle 1 - width: "); scanf("%lf", &r1.width);
+    printf("Rectangle 1 - height: "); scanf("%lf", &r1.height);
+    printf("Rectangle 2 - width: "); scanf("%lf", &r2.width);
+    printf("Rectangle 2 - height: "); scanf("%lf", &r2.height);
+
+    double area1 = r1.width * r1.height;
+    double area2 = r2.width * r2.height;
+
+    if (area1 > area2) {
+        printf("Rectangle 1 is larger (area: %.2f)\n", area1);
+    } else {
+        printf("Rectangle 2 is larger (area: %.2f)\n", area2);
+    }
+
+    return 0;
+}
