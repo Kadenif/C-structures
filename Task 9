@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct Complex {
+    double real;
+    double imag;
+};
+
+int main() {
+    struct Complex c1, c2, sum;
+
+    printf("Complex 1 - real: "); scanf("%lf", &c1.real);
+    printf("Complex 1 - imag: "); scanf("%lf", &c1.imag);
+    printf("Complex 2 - real: "); scanf("%lf", &c2.real);
+    printf("Complex 2 - imag: "); scanf("%lf", &c2.imag);
+
+    sum.real = c1.real + c2.real;
+    sum.imag = c1.imag + c2.imag;
+
+    printf("Sum: %.0f + %.0fi\n", sum.real, sum.imag);
+
+    return 0;
+}
