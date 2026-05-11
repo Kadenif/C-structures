@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct Product {
+    char name[50];
+    double price;
+};
+
+int main() {
+    struct Product prod1, prod2;
+
+    printf("Product 1 - name: "); scanf("%s", prod1.name);
+    printf("Product 1 - price: "); scanf("%lf", &prod1.price);
+    printf("Product 2 - name: "); scanf("%s", prod2.name);
+    printf("Product 2 - price: "); scanf("%lf", &prod2.price);
+
+    if (prod1.price > prod2.price) {
+        printf("%s is more expensive\n", prod1.name);
+    } else {
+        printf("%s is more expensive\n", prod2.name);
+    }
+
+    return 0;
+}
